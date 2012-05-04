@@ -1,5 +1,5 @@
 <html>
 Hello everyone
-<hr>
+<hr/>
 <a href = "index-org.jsp"> old page </a>
 </html>
