@@ -6,5 +6,4 @@
 </head>
 Sorry! We don't seem to be able to find the page you requested.
 <hr/>
-<a href = "index-org.jsp"> old page </a>
 </html>
