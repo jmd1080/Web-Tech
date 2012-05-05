@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Sat May 05 22:29:45 BST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0137-1ee8-892f-000002d148d0 
+on database directory /home/jamie/databases/data  with class loader org.apache.catalina.loader.StandardClassLoader@6019d0a1 
+Loaded from file:/usr/share/tomcat7/lib/derby.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_23-b23
+user.dir=/home/jamie/WebTech/Web-Tech/WEB-INF/classes
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
