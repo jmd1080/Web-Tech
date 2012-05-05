@@ -1,0 +1,5 @@
+/*Correcting for the box model bug*/
+div.double div.leftcol, div.double div.rightcol
+{
+    width:40%
+}

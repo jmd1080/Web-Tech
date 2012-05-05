@@ -1,0 +1,240 @@
+
+body {
+    min-width:22.5em;
+    color:#222;
+    background:#FFF
+}
+
+html, body { 
+    padding:0; 
+    margin:0; 
+    background-color: #FFF;
+    font-family:"Helvetica Neue", Arial, Helvetica, sans-serif
+}
+
+p.signature {
+	text-indent: 1em;
+	font-style:italic
+}
+p.valediction {
+	font-weight:bold
+}
+
+a {
+    text-decoration: none
+}
+
+label {
+    font-weight:bold
+}
+
+/*Header and Footer formatting*/
+
+footer, header {
+    color: #333;
+	padding: 0 6%;
+	min-width:37.5em
+}
+
+footer {
+	float:right
+}
+
+/*Navigation formatting*/
+
+div.navigate, nav {
+    float:right;
+}
+
+div.navigate ul li, nav ul li {
+	padding: 0 1.25em
+}
+
+div.navigate ul, nav ul {
+    float: left;
+	position: relative;
+	list-style: none;
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0
+}
+
+header div.navigate ul, header nav ul {
+    margin-top:6%
+}
+
+div.navigate li, nav li{
+    float:left;
+    margin-bottom:3%
+}
+
+div.navigate a, nav a{
+    color:#202020 ;
+    text-decoration:none
+}
+
+div.navigate a:hover, div.navigate li.current a, nav a:hover,nav li.current a{
+    border-bottom:.2em solid #09F
+}
+
+/*Column formatting*/
+
+div.info h1{
+    color: white
+}
+
+div.leftcol, div.rightcol
+{
+    text-align:justify;
+    margin: 0 2% 2% 4%
+}
+
+div.double div.leftcol, div.double div.rightcol
+{
+    width:44%
+}
+
+div.singlecol
+{
+    text-align:left;
+    float:left
+}
+
+div.leftcol { 
+    float:left
+}
+
+div.rightcol {
+    float:right
+}
+
+div.endinfo {
+    clear: left;
+    padding: 1%
+}
+
+form{
+    text-align:left
+}
+
+/* Box specific formatting */
+
+div.box h1, div.box h2, div.box h3, div.box h4, div.box h5, div.box p{
+    color:#000
+}
+
+div.box a{
+    text-decoration:underline
+}
+
+div.box ul li{
+    padding:.5%;
+}
+
+/************************************
+** CSS 3 and non-standard Elements **
+************************************/
+
+
+div.box {
+	background: #FFF;
+	-webkit-border-radius: .1em;
+	-moz-border-radius: .1em;
+	border-radius: .1em;
+	-webkit-box-shadow: .2em .2em .35em #BBB;
+	-moz-box-shadow: .2em .2em .35em #BBB;
+	box-shadow: .2em .2em .35em #BBB;
+	position: relative;
+	padding:5%;
+	overflow:hidden;
+	max-width: 50em
+}
+
+div.info {
+    width:90%;
+    color: #333;
+	font-size: 0.9em;
+	padding: 1% 5%;
+	min-width:100%;
+	min-width:25em;
+	
+	background-color:#09F;
+	
+	/* background gradient */	
+	background-image: linear-gradient(bottom, #FFF 60%, #09F 85%);
+	background-image: -o-linear-gradient(bottom, #FFF 60%, #09F 75%);
+	background-image: -moz-linear-gradient(bottom, #FFF 60%, #09F 75%);
+	background-image: -webkit-linear-gradient(bottom, #FFF 60%, #09F 75%);
+	background-image: -ms-linear-gradient(bottom, #FFF 60%, #09F 75%);
+	
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.60, #FFF),
+	color-stop(0.75, #09F)
+	)
+}
+
+/* resizing elements for single column mode */
+@media only screen and (max-width:42.5em){
+    
+    header nav, header div.navigate{
+        float:right;
+        text-align:right
+    }
+    header div.navigate ul, header nav ul{
+        margin-top:0
+    }
+    header div.navigate ul li, header nav ul li{
+        float:none;
+        padding:1%
+    }
+    header div.navigate a, header nav a{
+        margin:0
+    }
+    header div.navigate a:hover, header div.navigate li.current a, 
+    header nav a:hover, header nav li.current a{
+        border-bottom:0;
+        font-weight:bold
+    }
+    header{
+        white-space: normal;
+        margin-top:1%;
+        margin-bottom:2%;
+        min-width:12.5em
+    }
+    footer{
+        min-width:18.75em
+    }
+    
+    div.leftcol, div.rightcol, div.double div.leftcol, div.double div.rightcol,
+    div.triple div.leftcol, div.triple div.rightcol, div.triple div.centercol
+    {
+        width:100%;
+        float:none;
+        text-align: center
+    }
+    
+    div.info
+    {
+        width:none;
+        min-width:16.25em
+    }
+    
+    p.signature {
+        text-indent:0
+	}
+	
+	div.box {
+	    width:80%
+	}
+	
+	/* Scale the image using CSS */
+	div.sideimage {
+	    width:80%;
+	    padding:5%;
+	    text-align: center
+	}
+}

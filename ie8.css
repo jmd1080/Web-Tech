@@ -1,0 +1,6 @@
+/* Handles lack of border-bottom hovering in IE <= 8
+and the total lack of border-bottom in IE <= 7*/
+div.navigate a:hover, div.navigate li.current a
+{
+    color:#09F;
+}

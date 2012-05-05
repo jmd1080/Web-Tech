@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>jd9993 Report</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" type="text/css" media="screen" href="ie8.css"/>
+        <![endif]-->
+        <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" media="screen" href="ie6.css"/>
+        <![endif]--></head>
+<body>
+<div class="info">
+    <h1 class = "maintitle">Report</h1>
+    <div class = "box">
+        <h2>Html</h2>
+        <ul>
+            <li>
+                Implemented in HTML 5 with graceful degradation
+            </li>
+            <li>
+                All pages successfully validated by 
+                <a href="http://validator.w3.org/ ">http://validator.w3.org/</a>
+            </li>
+            <li>
+                HTML 5 with utf-8 character encoding specified on all pages
+            </li>
+            <li>
+                IE &lt;= 8 and IE &lt;= 6 specific style sheets implemented
+                <a href="#IE6">See CSS.</a>
+            </li>
+            <li>
+                Input forms with autofocus, autocomplete settings, placeholder 
+                text. See <a href="contact.html">contact</a> and 
+                <a href="login.html">log in</a>. No functionality as yet.
+            </li>
+            <li>
+                Use of the &lt;wbr&gt; tag to compensate for browser not going 
+                to new line in the middle of a hyphenated word.
+                <a href="index.html">Example: Used on 'one - stop'</a>
+            </li>
+            <li>
+                Placeholder images using img with width and height defined
+                <a href="index.html">Example: 300x300 placeholder image</a>
+            </li>
+            <li>
+                Mailto link used <a href="login.html">here</a> as alternative 
+                contact method. Aware is <a href="http://en.wikipedia.org/wiki/Mailto#Security_and_privacy">
+                security risk</a> and will implement javascript method to limit
+                spam / password request method in next assignment.
+            </li>
+            <li>
+                All navigation menus implemented properly using &lt;nav&gt;,
+                &lt;ul&gt; and &lt;li&gt; to assist with disabled access
+            </li>
+        </ul>
+        <a href="index.html">Take me to the site</a>
+    </div>
+    <br/>
+    <div class = "box">
+        <h2>Css</h2>
+        <ul>
+            <li>
+                Implemented in CSS 3.0 with graceful degradation to CSS 2.1
+            </li>
+            <li><a id="IE6"></a>
+                Solution implemented to IE6 broken box model in ie6.css
+            </li>
+            <li>
+                Solution implemented to no border-bottom hovering in IE &lt;= 8 in
+                ie8.css
+            </li>
+            <li>
+                All style sheets successfully validated by 
+                <a href="http://jigsaw.w3.org/css-validator/">
+                http://jigsaw.w3.org/css-validator/</a>
+            </li>
+            <li>
+                At less than 42.5 em width site switches to single column mode, 
+                resizing the navigation menu. Acheived using '@media only screen 
+                and (max-width:42.5em)' <a href="#source1">See source 1.</a>
+            </li>
+            <li>
+                On hover formatting for links. <a href="#source2">See source 2.
+                </a>
+            </li>
+            <li>
+                Colour gradient on boxes using CSS3, -webkit (Chrome and Safari),
+                -moz (Firefox), -ms (IE) and -o (Opera)
+            </li>
+            <li>
+                Box shadow implemented using CSS3, -webkit and -moz implemented
+                <a href="index.html">Example</a>
+            </li>
+            <li>
+                All font sizes, text indents padding and margins in 
+                <a href="https://www.cs.bris.ac.uk/Teaching/Resources/COMSM0104/lectures/css/good.html">
+                good relative units</a>
+            </li>
+            <li>
+                Single and two column layouts implemented. 
+                <a href="#source4">See source 4.</a>
+            </li>
+            <li>
+                Fonts implemented using 
+                <a href="https://www.cs.bris.ac.uk/Teaching/Resources/COMSM0104/lectures/css/p17.html">
+                preference order</a>
+            </li>
+            <li>
+                All colours are web safe, from list at 
+                <a href="http://www.w3schools.com/html/html_colors.asp">
+                http://www.w3schools.com/html/html_colors.asp
+                </a>
+            </li>
+        </ul>
+        <a href="index.html">Take me to the site</a>
+    </div>
+    <br/>
+    <div class ="box">
+        <h2>Sources/Inspiration</h2>
+        <ul>
+            <li>
+                <a id="source1" 
+                href="http://acko.net/">http://acko.net/</a> - Used to discover 
+                code to reformat to single column mode below certain size. Only 
+                directly copied code is '@media only screen and 
+                (max-width:???px)'
+            </li>
+            <li>
+                <a id="source2" 
+                href="http://www.saltsurf.com">www.saltsurf.com</a> - 
+                Copied the border-bottom and emboldden onhover for navigation.
+                Adjusted colour of bottom border and dimensions to em units
+            </li>
+            <li>
+                <a id="source3" 
+                href="http://www.aiesec.co.uk/">www.aiesec.co.uk/</a> - 
+                Used for formatting inspiration, as web page is for the same 
+                organisation. Adapted code for box shadow by researching 
+                cross-<wbr/>browser compatability, altering box dimensions and
+                internal formatting. Converted colours to web safe and
+                dimensions from px to em.
+            </li>
+            <li>
+                <a id="source4" 
+                href="https://www.cs.bris.ac.uk/Teaching/Resources/COMSM0104/lectures/css/p26.html">
+                www.cs.bris.ac.uk/Teaching/Resources/COMSM0104/lectures/css/p26.html</a> - 
+                Used code for two column layout. Adapted to allow for single
+                column mode when page is below 42.5 em width
+            </li>
+            <li>
+                <a id="source5" 
+                href="http://gradients.glrzad.com/">
+                www.gradients.glrzad.com/</a> - 
+                Used code generated as guideline for creating a CSS gradient.
+                On top of using code researched cross-<wbr/>browser 
+                compatability, adapted gradient to web safe colours, ensured
+                good degradation to browsers with no gradient support
+            </li>
+        </ul>
+        <a href="index.html">Take me to the site</a>
+    </div>
+</div>
+</body>
+</html>
