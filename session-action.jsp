@@ -61,8 +61,10 @@ rs = ps.executeQuery();
 if (rs.next())
 {
     session.setAttribute("username", request.getParameter("username"));
-    response.sendRedirect("log.jsp");
+    response.sendRedirect("user/home.jsp");
 }
+else
+    response.sendRedirect("log.jsp");
 
 if(ps!=null){
     ps.close();
