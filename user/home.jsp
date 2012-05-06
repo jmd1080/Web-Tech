@@ -60,7 +60,23 @@ else {
     return;
 }
 
+sql="SELECT t.picture, t.about FROM app.trainers t, app.TRAINER_RELATIONS r"
++" WHERE (t.id = r.trainerid) AND (r.userid = ?) ";
 
+ps = con.prepareStatement(sql);
+
+ps.setInt(1,rs.getInt("id"));
+rs = ps.executeQuery();
+
+String picture = "";
+String description = "";
+
+if (rs.next())
+{
+    isTrainer = true;
+    picture = rs.getString("picture");
+    description = rs.getString("about");
+}
 %>
 <header>
 <a href="../index.html"><img src="../logo.png" alt="NTT logo"/></a>
@@ -90,7 +106,7 @@ else {
 <div class="box">
 <h2> User Info </h2>
 <p>
-<strong>
+<strong> 
 Username: 
 </strong>
 <%=username%> 
@@ -113,11 +129,27 @@ Email:
 </strong>
 <%=email%>
 </p>
+<% if (isTrainer) { %>
+    <hr/>
+    <h2> Trainer Info </h2>
+    <p>
+    <strong>
+    Trainer Description: 
+    </strong>
+    </p>
+    <p>
+    <%=description%>
+    </p>
+<% } %>
 </div>
 </div>
 <div class = "rightcol">
 <div class = "sideimage">
-<img src="placeholder.png" alt="Placeholder" height="300" width="300"/>
+<% if (!isTrainer) { %>
+<img src="../info/pictures/sillouete.png" alt="Placeholder" height="300" width="300"/>
+<%} else {%>
+<img src="<%="../info/pictures/"+picture%>" alt="Placeholder" height="300" width="300"/>
+<%}%>
 </div>
 </div>
 <div class="endinfo"></div>
